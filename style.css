@@ -1,0 +1,18 @@
+
+
+html {
+  background-color: #235162
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+}
+
+a {
+  color: #e8d487;
+}
