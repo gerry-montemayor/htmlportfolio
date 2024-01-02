@@ -17,6 +17,9 @@ body {
 }
 
 #nav-bar {
+  top: 0px;
+  z-index: 1;
+  position: sticky;
   display: flex;
   flex-direction: row;
   margin: 0px;
@@ -70,12 +73,14 @@ body {
 
 
 .welcome-container img {
+  opacity: 0;
   width: 28vw;
   border-radius: 80px;
   border: 15px solid #4B5975;
   align-self: flex-start;
   margin-top: 40px;
   margin-left: 10%;
+  animation: fadeIn 3s forwards;
 }
 
 
@@ -177,7 +182,7 @@ body {
   margin: 0 auto;
   letter-spacing: .15em;
   opacity: 0;
-  animation: appear 0s 4s forwards, typing 3s 3.5s steps(40, end), blink-caret .75s step-end infinite, fadeIn 2s 3.5s;
+  animation: appear 0s 3.5s forwards, typing 3s 3s steps(40, end), blink-caret .75s step-end infinite, fadeIn 2s 3.5s;
 }
 
 .text-3 {
@@ -270,7 +275,10 @@ body {
 }
 
 @keyframes resumeSlideIn {
-  from {transform: translateY(150px)}
+  from {
+    transform: translateY(150px)
+  }
+
   to {
     transform: translateY(0px);
   }
@@ -284,7 +292,7 @@ body {
   max-height: 600px;
   animation: resumeSlideIn 3s, fadeIn 5s;
 
-  
+
 }
 
 
@@ -297,7 +305,7 @@ body {
 
 .social-bar {
   justify-content: flex-end;
-  margin-top: 30px;
+  margin-top: 1%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -336,7 +344,198 @@ body {
 
 
 
+.about-container {
+  width: 90%;
+  height: fit-content;
+  margin-left: 5%;
+}
 
+#about-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  margin-left: 2%;
+  text-wrap: wrap;
+  width: auto;
+  height: 90%;
+  gap: 5%;
+}
+
+#about-text-1 {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  width: 60%;
+  text-wrap: wrap;
+  background-color: #141A22;
+  padding: 2%;
+  border-radius: 50px;
+
+}
+
+#about-text-1 p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  margin: 0px;
+  color: #CCCCB5;
+}
+
+#about-text-2 {
+  width: auto;
+  height: min-content;
+  padding-left: 5px;
+}
+
+#about-text-2 p {
+  opacity: 0;
+  font-size: 140%;
+  color: #CCCCB5;
+  font-family: 'Noto Sans', sans-serif;
+  animation: fadeIn 1s forwards;
+}
+
+.about-img {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.about-img>img {
+  width: 90%;
+  margin-left: 10%;
+  margin-top: 15%;
+  border-radius: 30px;
+  border: 10px solid #4B5975
+}
+
+
+p {
+  font-family: 'Caveat';
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto Slab', serif;
+  color: #C69F68;
+  font-size: 60px;
+}
+
+#more-aboutme-container {
+  opacity: 0;
+  width: 100%;
+  height: 20%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  animation: fadeIn 2s .5s forwards;
+}
+
+
+
+.moreabout-container {
+  width: 35%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+
+.moreabout-container p {
+  color: #CCCCB5;
+  font-size: 200%;
+}
+
+#second-about-container {
+  height: 100%;
+}
+
+
+
+#to-timeline {
+  padding: 5%;
+  height: 80%;
+
+  font-size: 200%;
+  background-color: #4B5975;
+  border: 3px solid #CCCCB5;
+  border-radius: 50px;
+  color: whitesmoke;
+  font-family: 'Caveat';
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+#to-timeline:hover {
+  background-color: #141A22;
+
+}
+
+
+.timeline-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-line-container>hr {
+  color: black;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border: 4px solid black;
+}
+
+
+
+@keyframes timelineSlideIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+
+#timeline-hr {
+  animation: timelineSlideIn 3s;
+  width: 100%;
+  border: 3px solid #CCCCB5;
+  border-radius: 10px;
+}
+
+#north-timeline {
+  opacity: 0;
+  animation: timelineSlideIn 3s 1s, fadeIn 5s 1s forwards;
+  height: 100%;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+#south-timeline {
+  opacity: 0;
+  animation: timelineSlideIn 3s 1s, fadeIn 5s 1s forwards;
+
+  height: 100%;
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.timeline-item {
+  background-color: #4B5975;
+  border: 5px solid #CCCCB5;
+  border-radius: 30px;
+  width: 25%;
+  height: 90%;
+  transition: .2s all;
+}
+
+.timeline-item:hover {
+  transform: scale(1.2);
+}
 
 
 /*has new font */
@@ -349,13 +548,8 @@ h2 {
   color: #191F28;
 }
 
-p {
-  font-family: 'Caveat';
-  font-family: 'Libre Baskerville', serif;
-  font-family: 'Roboto Slab', serif;
-  color: #C69F68;
-  font-size: 60px;
-}
+
+
 
 a {
   color: inherit;
