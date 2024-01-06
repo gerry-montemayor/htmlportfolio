@@ -4,79 +4,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GM</title>
+  <title>Home</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@600&display=swap"
     rel="stylesheet">
+  <script src="./script.js" defer> </script>
 </head>
 
-<body style="display: flex; flex-direction: column; overflow: hidden;">
-  <div id="nav-bar">
-    <p> GM. </p>
-    <hr />
-    <div id="home" class="nav-item">
-      <img src="./assets/images/icon-home.png">
-      <a href="./index.html">
-        <h2> Home </h2>
-      </a>
-    </div>
-
-    <div id="about" class="nav-item">
-
-      <img src="./assets/images/icon-aboutme.png">
-      <a href="./about.html">
-        <h2> About </h2>
-      </a>
-    </div>
-    <div id="resume-nav" class="nav-item">
-      <img src="./assets/images/icon-resume.png">
-      <a href="./resume.html">
-        <h2> Resume </h2>
-      </a>
-    </div>
-  </div>
-  <br />
-  <br />
-  <div id="main-container" style=" height: 100%; display: flex; flex-direction: column;">
-    <div class="welcome-container">
-      <img src="./assets/images/gerrypic.jpg" draggable="false">
-      <div class="welcome-text">
-        <div class="text-1">
-          <p style="display: inline; color: #CCCCB5;"> Hello! </p>
-          <div class="waving-hand">&#x1F44B; </div>
-        </div>
-        <div class="text-2">
-          <p> I'm Gerry. </p>
-        </div>
-        <div class="text-3">
-          <h2> Welcome to my website! <h1>
-        </div>
-      </div>
-    </div>
-    <div class="social-bar">
+<body>
+  <div class="navbar">
+    <div class="nav-title">GM.</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="hr-container">
       <hr />
-      <div class="social-images">
-        <a href="https://github.com/gerry-montemayor"draggable="false">
-          <img src="./assets/images/icon-github.png" draggable="false">
-        </a>
-        </img>
-        <a href="https://www.linkedin.com/in/gerry-montemayor/" draggable="false">
-          <img src="./assets/images/icon-linkedin.png" draggable="false">
-        </a>
-        <a href="https://www.instagram.com/gerrym26/" draggable="false">
-          <img src="./assets/images/icon-instagram.png" draggable="false">
-        </a>
-      </div>
-      <hr style="width: 10%; margin-right:2%; margin-left: 0px;" />
     </div>
-    
+    <div class="navbar-links">
+      <ul>
+        <li>
+          <a class="link-container" href="./index.html">
+            <img src="./assets/images/icon-home.png">
+            <div class="nav-text">
+              <p>Home</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="link-container" href="./about.html">
+            <img src="./assets/images/icon-about.png">
+            <div class="nav-text">
+              <p>About</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="link-container" href="./resume.html">
+            <img src="./assets/images/icon-resume.png">
+            <div class="nav-text">
+              <p>Resume</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
+
+  <div class="home-container">
+    <img src="./assets/images/gerrypic.jpg">
+    <div class="welcome-text-container">
+      <div class="hello welcome-text" style="display: flex">Hello!<div class="waving-hand" style="display: inline;">
+          &#x1F44B;</div>
+      </div>
+      <div class="name welcome-text" style="display: flex;">I'm Gerry.</div>
+      <div class="website welcome-text" style="display: flex">
+        <p>Welcome to my website!</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <hr id="line1" />
+    <div class="social-links-container">
+      <a href="https://github.com/gerry-montemayor">
+        <img src="./assets/images/icon-github.png">
+      </a>
+      <a href="https://www.linkedin.com/in/gerry-montemayor/">
+        <img src="./assets/images/icon-linkedin.png">
+      </a>
+      <a href="https://www.instagram.com/gerrym26/">
+        <img src="./assets/images/icon-instagram.png">
+      </a>
+    </div>
+    <hr id="line2"/>
+  </div>
+
+
+
+
+
+
 
 </body>
 

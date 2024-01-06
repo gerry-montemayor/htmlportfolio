@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="overflow-x: hidden; position: fixed ">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,85 +8,52 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@600&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@600&display=swap"
-    rel="stylesheet">
+  <script src="./script.js" defer> </script>
 </head>
 
-<body style="overflow: auto; scroll-behavior: smooth; top: 0px; position: relative">
-  <div id="nav-bar">
-    <p> GM. </p>
-    <hr />
-    <div id="home" class="nav-item">
-      <img src="./assets/images/icon-home.png">
-      <a href="./index.html">
-        <h2> Home </h2>
-      </a>
+<body>
+  <div class="navbar">
+    <div class="nav-title">GM.</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="hr-container">
+      <hr />
     </div>
-
-    <div id="about" class="nav-item">
-
-      <img src="./assets/images/icon-aboutme.png">
-      <a href="./about.html">
-        <h2> About </h2>
-      </a>
-    </div>
-    <div id="resume-nav" class="nav-item">
-      <img src="./assets/images/icon-resume.png">
-      <a href="./resume.html">
-        <h2> Resume </h2>
-      </a>
-    </div>
-  </div>
-  <div class="about-container" style="display: flex; flex-direction: row;">
-    <div id="about-text">
-      <div id="about-text-1">
-        <p> Let me introduce myself. </p>
-      </div>
-      <div id="about-text-2">
-        <p> Hello, I'm Gerardo Montemayor, a sophomore at Cornell
-          University, hailing from Clarksville, MD. I have a passion for
-          full-stack development and want to intertwine my software
-          skills with my love for design to create powerful and user-friendly
-          applications.
-        <p>
-      </div>
-    </div>
-    <div class="about-img">
-      <img src="./assets/images/home-pic.jpg">
+    <div class="navbar-links">
+      <ul>
+        <li>
+          <a class="link-container" href="./index.html">
+            <img src="./assets/images/icon-home.png">
+            <div class="nav-text">
+              <p>Home</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="link-container" href="./about.html">
+            <img src="./assets/images/icon-about.png">
+            <div class="nav-text">
+              <p>About</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="link-container" href="./resume.html">
+            <img src="./assets/images/icon-resume.png">
+            <div class="nav-text">
+              <p>Resume</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <div id="more-aboutme-container">
-    <div class="moreabout-container" style="width: 55%; background-color: #141A22; border-radius: 30px;">
-      <p> Check out my CS Journey: </p>
-      <a href="./timeline.html">
-        <button id="to-timeline">
-          My CS Timeline
-        </button>
-      </a>
-    </div>
-    <div>
-      <a href="#second-about-container" style="display: flex; height: 100%; justify-content: center;">
-        <p style="font-size: 180%; color: #4B5975; margin-top: 10%;"> or keep learning about me!</p>
-        <img src="./assets/images/icon-downarrow.png" style="height: 80%">
-      </a>
-    </div>
-  </div>
-
-
-  <div id="second-about-container">
-    <p> YOOO </p>
-  </div>
-
-
 </body>
 
 </html>

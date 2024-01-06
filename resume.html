@@ -5,54 +5,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Roboto+Slab:wght@600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer> </script>
 </head>
 
 <body>
-  <div id="nav-bar">
-    <p> GM. </p>
-    <hr />
-    <div id="home" class="nav-item">
-      <img src="./assets/images/icon-home.png">
-      <a href="./index.html">
-        <h2> Home </h2>
-      </a>
+  <div class="navbar">
+    <div class="nav-title">GM.</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="hr-container">
+      <hr />
     </div>
-
-    <div id="about" class="nav-item">
-
-      <img src="./assets/images/icon-aboutme.png">
-      <a href="./about.html">
-        <h2> About </h2>
-      </a>
-    </div>
-    <div id="resume-nav" class="nav-item">
-      <img src="./assets/images/icon-resume.png">
-      <a href="./resume.html">
-        <h2> Resume </h2>
-      </a>
+    <div class="navbar-links">
+      <ul>
+        <li>
+          <a class="link-container" href="./index.html">
+            <img src="./assets/images/icon-home.png">
+            <div class="nav-text">
+              <p>Home</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="link-container" href="./about.html">
+            <img src="./assets/images/icon-about.png">
+            <div class="nav-text">
+              <p>About</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="link-container" href="./resume.html">
+            <img src="./assets/images/icon-resume.png">
+            <div class="nav-text">
+              <p>Resume</p>
+            </div>
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="resume-page-content">
-    <div class="button-container">
-      <button class="resume-button"> <a href="./assets/Resume.pdf"> Download Resume </a> </button>
-    </div>
-    <div class="resume-container">
-      <img src="./assets/images/resume-image.png" draggable="false" width="80%">
-    </div>
-  </div>
 
 
 
-  </div>
+
+
+  
 </body>
 
 </html>
