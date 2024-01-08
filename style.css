@@ -198,7 +198,7 @@ html {
 }
 
 .waving-hand {
-  animation: wave-animation 3s 2.5s;
+  animation: wave-animation 3s 2s;
   animation-iteration-count: infinite;
   transform-origin: 70% 70%;
   display: inline-block;
@@ -352,7 +352,7 @@ html {
   border: 10px solid #4B5975;
   border-radius: 50px;
   margin-top: 50px;
-  
+
 }
 
 .about-text-container {
@@ -367,7 +367,8 @@ html {
   width: 500px;
   background-color: #141A22;
   padding: 15px;
-  border-radius: 50px;;
+  border-radius: 50px;
+  ;
   color: #CCCCB5;
   font-size: 65px;
   margin-left: 50px;
@@ -384,6 +385,118 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+
+@keyframes slideUp {
+  from {
+    transform: translateY(150px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resume-img {
+  width: 80%;
+  animation: slideUp 2s, fadeIn 3s;
+}
+
+#resume-image.active {
+  transform: scale(1.5);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  opacity: 0;
+  animation: fadeIn 1.5s 2s forwards;
+  background-color: #4B5975;
+  border: 10px solid #CCCCB5;
+  border-radius: 30px;
+  font-size: 25px;
+  color: #CCCCB5;
+  width: 200px;
+  height: 100px;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.zoom {
+  width: 80px;
+  height: fit-content;
+  border-radius: 0px;
+
+}
+
+.button:hover {
+  background-color: #323b4e;
+}
+
+
+/* @keyframes bobUpAndDown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+} */
+
+.more-about-container {
+  position: absolute;
+  height: 600px;
+  margin-top: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-title {
+  font-size: 40px;
+}
+
+.more-about-text {
+  background-color: #4B5975;
+  padding: 20px;
+  color: #CCCCB5;
+  border: 5px solid #CCCCB5;
+}
+
+.aboutme {
+  border: 0px solid transparent;
+  background-color: #141A22;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 1200px;
+}
+
+.even-more {
+  background-color: green;
+  margin-top: 2000px;
+}
 
 
 
@@ -405,6 +518,10 @@ html {
   .about-text {
     margin: 0;
   }
+
+
+
+
 
 }
 
@@ -484,11 +601,17 @@ html {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
+
+
+  .more-about-text {
+    margin-top: 40px;
+    width: 410px;
+  }
 
   .about-text {
-    width: 460px;
+    width: 410px;
     font-size: 35px;
   }
 

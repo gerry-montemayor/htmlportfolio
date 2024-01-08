@@ -4,5 +4,11 @@ const navHRLine = document.getElementsByClassName('hr-container')[0];
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
   navHRLine.classList.toggle('active');
+});
 
+const zoomInButton = document.getElementsByClassName('in')[0];
+const resumeImage = document.getElementById('resume-img');
+
+zoomInButton.addEventListener('click', () => {
+  resumeImage.classList.toggle('active');
 });
